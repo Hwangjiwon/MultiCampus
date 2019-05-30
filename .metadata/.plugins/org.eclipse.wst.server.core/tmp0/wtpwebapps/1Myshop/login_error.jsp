@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	Failed:(  <br> <a href ='index.html'>Login</a>
+	
+	<img src="https://chart.googleapis.com/chart?chs=250x100&chd=t:10,20,70&cht=p3&chl=Hello|World|JW">
+</body>
+</html>

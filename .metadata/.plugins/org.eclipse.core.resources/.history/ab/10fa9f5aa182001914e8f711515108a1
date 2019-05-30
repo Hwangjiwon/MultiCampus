@@ -1,0 +1,37 @@
+package web.model;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+public class MemberDAO {
+	public String login(String id, String pw) throws Exception {
+		
+		Class.forName("com.mysql.jdbc.Driver");
+		String url = "jdbc:mysql://192.168.111.100:3306/openeg";
+		String db_user = "root";
+		String db_pw = "apmsetup";
+		
+		Connection conn = DriverManager.getConnection(url,db_user,db_pw);
+		String sql="select username from board_member"
+				+" where userid=? and userpw=?";
+		
+		// 회원가입
+		//String join = "insert into from board_member(userid,userpw,username) values(?,?,?)";
+		PreparedStatement stmt = conn.prepareStatement(sql);
+		stmt.setString(1, id);
+		stmt.setString(2, pw);
+		ResultSet rs = stmt.executeQuery();
+		//stmt.executeUpdate();
+		//System.out.println("1행이 update되었습니다.");
+		if(rs.next()) {
+			String username = rs.getString(1);
+			return username;
+		}else {
+			return null;
+		}
+		
+		
+	}
+}

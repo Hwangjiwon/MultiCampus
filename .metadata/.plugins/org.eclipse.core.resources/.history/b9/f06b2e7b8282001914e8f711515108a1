@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border="1" width="900" height="700">
+		<tr height="15%"><td colspan="2">Title</td></tr>
+		<tr height="5%"><td colspan="2"> &nbsp;HTML &nbsp; CSS &nbsp; JavaScript &nbsp; </td></tr>
+		<tr width="20%"><td colspan="2"> HTML CSS JavaScript </td></tr>
+		 
+	</table>
+</body>
+</html>

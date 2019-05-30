@@ -1,0 +1,43 @@
+package web.controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+public class MainServlet extends HttpServlet {
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		process(request, response); //process로 포워딩
+	}
+
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		process(request, response); //process로 포워딩
+	}
+	
+	protected void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("process 동작 중...");
+		
+		String sign = request.getParameter("sign");
+		if (sign != null) {
+			if (sign.equals("login")) {
+				String id = request.getParameter("id");
+				String pw = request.getParameter("pw");
+				
+				// DB연동 후 확인, 로그인 처리 
+				System.out.println(id+" "+pw);
+				//brower에서 출력하기 위함. out.println()을 사용하기 위함...
+				PrintWriter out = response.getWriter();
+				out.println(id+" "+pw);
+			}
+		} else {
+			// 침해 대응
+		}
+	}
+
+}

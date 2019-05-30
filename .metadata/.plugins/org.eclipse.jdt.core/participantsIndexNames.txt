@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\1HTML\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2006242071.index
+\2Study\src
+C:\1HTML\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\679818551.index
+\2Study\src
+C:\1HTML\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\301461283.index
+\1Myshop\src

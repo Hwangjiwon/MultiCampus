@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form action="Main?sign=login" method="post">
+		ID <input name = "id"><br>
+		PW <input name = "pw" type="password"><br>
+		<input type="submit" value = "Login">
+	</form>
+	<table border="1">
+		<caption>수업시간표2(셸 합치기)</caption>
+		<thead>
+			<tr>
+				<td>시간</td>
+				<td>월요일</td>
+				<td>화요일</td>
+				<td>수요일</td>
+				<td>목요일</td>
+			</tr>
+		</thead>
+		<tr>
+			<td>1교시</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td rowspan="3">웹응용</td>
+		</tr>
+		<tr>
+			<td>2교시</td>
+			<td rowspan="2">웹프로그래밍</td>
+			<td></td>
+			<td></td>
+			
+		</tr>
+		<tr>
+			<td>3교시</td>
+			<td></td>
+			<td></td>
+			
+		</tr>
+		<tr>
+			<td>4교시</td>
+			<td></td>
+			<td colspan="2">JS</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>5교시</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+</html>
