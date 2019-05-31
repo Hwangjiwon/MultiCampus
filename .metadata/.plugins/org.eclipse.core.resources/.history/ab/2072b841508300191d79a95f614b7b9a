@@ -1,0 +1,56 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+<jsp:include page="header.jsp"></jsp:include>
+<jsp:include page="side.jsp"></jsp:include>
+<td>
+
+	*** 회원 가입 *** <br> <br>
+	
+	<form action = "/2Study/Main?sign=member_insert" method="get">
+		<fieldset>
+			<legend>필수사항</legend>
+		ID <input type = "text" name = "id" > <br>
+		PW <input type = "text" name = "pw" > <br>
+		</fieldset>
+		<fieldset>
+			<legend>인적사항</legend>
+		Name <input type = "text" name = "name"> <br>
+		E-Mail <input type ="email" placeholder="OOO@OOO.OOO" /> <br>
+		Gender <input type = "radio" name = gender" value = "male" checked /> 남성
+			<input type = "radio" name = gender" value = "female" /> 여성 <br>
+		Age <input type = "number" min = "1" max ="99" step ="1" value ="20"/> <br>
+		GitHub <input type = "url" placeholder="http://******"/> <br>
+		Tel <input type ="tel" pattern ="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}" placeholder ="0**-****-****"/><br>
+		Birth <input type ="date" name ="birth"/> <br>
+		National <select name ="country">
+					<option value = "Korea" selected> 대한민국 </option>
+					<option value = "USA"> 미국 </option>
+					<option value = "UK"> 영국 </option>
+					<option value = "Japan"> 일본 </option>
+					<option value = "China"> 중국 </option>
+				</select> <br>
+		</fieldset>			
+		<fieldset>
+			<legend>기타사항</legend>
+		Hobby <input type ="checkbox" name = "hobby" value = "movie" /> 영화 
+			  <input type ="checkbox" name = "hobby" value = "drive" /> 드라이브 
+		 	  <input type ="checkbox" name = "hobby" value = "soccer" /> 축구
+			  <input type ="checkbox" name = "hobby" value = "music" /> 음악 <br>
+		Color <input type = "color" name = "color" value = "#FF8080"><br>
+		Image <input type = "file" name = "filename" > <br>
+		Favorite <input type = "image" src = "https://i.pinimg.com/originals/a1/60/71/a16071849d7eaf5ef3d6554710451f05.png" alt ="Cat"/>
+				 <input type = "image" src = "data:image/png;base64,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" alt ="Dog"/> <br>
+		</fieldset>
+		<fieldset>
+			<legend>추가사항</legend>
+		<textarea rows = "3" cols ="50" name ="memo">
+자기소개를 입력해주세요.
+		</textarea> <br>
+		</fieldset>
+		<input type ="submit" value ="Sign Up">
+	</form>
+</td>
+</tr>
+
+<jsp:include page="copyright.jsp"></jsp:include>

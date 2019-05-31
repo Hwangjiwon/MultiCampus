@@ -55,12 +55,41 @@ public class MainServlet extends HttpServlet {
 					disp.forward(request, response);
 				}
 
-			} else if (sign.equals("logout")) { //세션끊기
+			} else if (sign.equals("logout")) { // 세션끊기
 				// servelet은 세션 선언해야 받아올 수 있음. jsp는 그냥 받아올 수 있음
 				HttpSession session = request.getSession();
 				session.invalidate();
 				RequestDispatcher disp = request.getRequestDispatcher("index.jsp"); // 응답할 페이지로
 				disp.forward(request, response);
+			} else if (sign.equals("member_insert")) { // 회원가입
+				// servelet은 세션 선언해야 받아올 수 있음. jsp는 그냥 받아올 수 있음
+				String id = request.getParameter("id");
+				String pw = request.getParameter("pw");
+				String name = request.getParameter("name");
+				String email = request.getParameter("email");
+				String gender = request.getParameter("gender");
+				String age = request.getParameter("age");
+				String git = request.getParameter("git");
+				String tel = request.getParameter("tel");
+				String birth = request.getParameter("birth");
+				String national = request.getParameter("national");
+				String[] hobby = request.getParameterValues("hobby");
+				String color = request.getParameter("color");
+				String description = request.getParameter("desc");
+				
+				System.out.println(id + " " + pw + " " + hobby.length + " " + description);
+				
+				MemberDAO member = new MemberDAO();
+				try { 
+					member.insertMember(id, pw, name);
+					RequestDispatcher disp = request.getRequestDispatcher("/2Study/jsp/member_insert_ok.jsp"); // 응답할 페이지로
+					disp.forward(request, response);
+					
+				} catch (Exception e) {
+					e.printStackTrace(); // 개발 시점에만 있게 하기
+					RequestDispatcher disp = request.getRequestDispatcher("/2Study/jsp/error.jsp"); // 응답할 페이지로
+					disp.forward(request, response);
+				}
 			}
 
 		} else {

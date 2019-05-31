@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+<jsp:include page="header.jsp"></jsp:include>
+<jsp:include page="side.jsp"></jsp:include>
+<td><a
+	href="https://img.withvolo.com/8UDtJa8YFMaC8XomGtvVI8dYDz0=/0x0:1000x667/809x/93cc7b30acf7c6cc74d0080010156afb%2F7bf16d18-26f4-49ac-b33e-c9dbbef267bd-c7c9300cc7a8719907396fa639668530fe30d6da.jpg"
+	target="iframe1">이미지1 표시</a> <a
+	href="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+	target="iframe1">이미지2 표시</a> <a href="https://getbootstrap.com"
+	target="iframe2">외부 링크1 표시</a> <a
+	href="https://getbootstrap.com/docs/4.3/utilities/text"
+	target="iframe2">외부 링크2 표시</a>
+
+	<h3 id="iframe1">Iframe1</h3> <iframe name="iframe1" width="500"
+		height="300"> 외부 문서 표시 영역1 </iframe>
+
+	<h3 id="iframe2">Iframe2</h3> <iframe src="" name="iframe2" width="500"
+		height="300"> 외부 문서 표시 영역2 </iframe>
+</td>
+</tr>
+<jsp:include page="copyright.jsp"></jsp:include>
