@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<jsp:include page="header.jsp"></jsp:include>
+<jsp:include page="side.jsp"></jsp:include>
+		<tr>
+			<td width="20%">
+				${username}님 환영합니다.
+				<ul>
+					<li><a href="html/audio_video.html">오디오/비디오</a></li>
+					<li><a href="html/iframe.html">외부요소 연결</a></li>
+					<li>오디오/비디오</li>
+					<li>오디오/비디오</li>
+					<li>오디오/비디오</li>
+				</ul>
+			</td>
+			<td>content</td>
+		</tr>
+<jsp:include page="copyright.jsp"></jsp:include>
+
+</body>
+</html>
