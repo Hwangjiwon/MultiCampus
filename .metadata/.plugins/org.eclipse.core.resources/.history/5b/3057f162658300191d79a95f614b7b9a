@@ -32,9 +32,7 @@ public class MainServlet extends HttpServlet {
 		
 		System.out.println("process 동작중...");
 		String sign = request.getParameter("sign");
-		
 		if (sign != null) {
-			
 			if (sign.equals("login")) {
 				String id = request.getParameter("id");
 				String pw = request.getParameter("pw");

@@ -28,13 +28,9 @@ public class MainServlet extends HttpServlet {
 
 	protected void process(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		request.setCharacterEncoding("utf-8");
-		
 		System.out.println("process 동작중...");
 		String sign = request.getParameter("sign");
-		
 		if (sign != null) {
-			
 			if (sign.equals("login")) {
 				String id = request.getParameter("id");
 				String pw = request.getParameter("pw");

@@ -28,13 +28,9 @@ public class MainServlet extends HttpServlet {
 
 	protected void process(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		request.setCharacterEncoding("utf-8");
-		
 		System.out.println("process 동작중...");
 		String sign = request.getParameter("sign");
-		
 		if (sign != null) {
-			
 			if (sign.equals("login")) {
 				String id = request.getParameter("id");
 				String pw = request.getParameter("pw");
@@ -86,12 +82,12 @@ public class MainServlet extends HttpServlet {
 				MemberDAO member = new MemberDAO();
 				try { 
 					member.insertMember(id, pw, name);
-					RequestDispatcher disp = request.getRequestDispatcher("jsp/member_insert_ok.jsp"); // 응답할 페이지로
+					RequestDispatcher disp = request.getRequestDispatcher("/2Study/jsp/member_insert_ok.jsp"); // 응답할 페이지로
 					disp.forward(request, response);
 					
 				} catch (Exception e) {
 					e.printStackTrace(); // 개발 시점에만 있게 하기
-					RequestDispatcher disp = request.getRequestDispatcher("jsp/error.jsp"); // 응답할 페이지로
+					RequestDispatcher disp = request.getRequestDispatcher("/2Study/jsp/error.jsp"); // 응답할 페이지로
 					disp.forward(request, response);
 				}
 			}

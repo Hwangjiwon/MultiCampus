@@ -62,7 +62,7 @@ public class MemberDAO {
 
 		// 4. 질의
 		// 회원가입
-		String sql = "insert into board_member(userid,userpw,username) values(?,?,?)";
+		String sql = "insert into from board_member(userid,userpw,username) values(?,?,?)";
 		stmt = conn.prepareStatement(sql);
 		stmt.setString(1, id);
 		stmt.setString(2, pw);
