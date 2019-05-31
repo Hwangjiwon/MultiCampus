@@ -1,0 +1,12 @@
+#1, #2, #4 {
+	background: orange;
+	display: inline;
+}
+
+#must {
+	background: #FBCFD0;
+}
+
+#option, #etc {
+	background: #C8EFD4;
+}

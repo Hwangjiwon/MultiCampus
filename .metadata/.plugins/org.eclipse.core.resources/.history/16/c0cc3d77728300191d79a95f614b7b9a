@@ -1,0 +1,21 @@
+h1, h2, h4 {
+	background: orange;
+	display: inline;
+}
+li:first-letter{
+	color : #822CC2;
+	font-size : 50px;
+	font-weight : bold;
+}
+
+#must {
+	background: #FBCFD0;
+}
+
+#option, #etc {
+	background: #C8EFD4;
+}
+
+#add {
+	background: #EDD3ED;
+}

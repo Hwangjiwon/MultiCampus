@@ -33,10 +33,10 @@
 		
 		<ul>
 			<!-- Context명부터 써줘서 절대경로화! /프로젝트명/... -->
-			<li><a href="/2Study/jsp/audio_video.jsp">오디오/비디오</a></li>
-			<li><a href="/2Study/jsp/iframe.jsp">외부요소 연결</a></li>
-			<li>오디오/비디오</li>
-			<li>오디오/비디오</li>
-			<li>오디오/비디오</li>
+			<li><a href="/2Study/jsp/audio_video.jsp">Audio/Video</a></li>
+			<li><a href="/2Study/jsp/iframe.jsp">Iframe</a></li>
+			<li>Iframe</li>
+			<li>Iframe</li>
+			<li>Iframe</li>
 		</ul>
 	</td>

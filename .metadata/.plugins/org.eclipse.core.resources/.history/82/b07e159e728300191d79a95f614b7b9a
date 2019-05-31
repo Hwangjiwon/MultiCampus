@@ -1,0 +1,9 @@
+body {
+	background: #C8EBFA;
+}
+
+h3 {
+	background: blue;
+	color: white;
+	text-align: center;
+}

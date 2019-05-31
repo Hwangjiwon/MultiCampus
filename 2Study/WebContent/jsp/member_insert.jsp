@@ -9,13 +9,13 @@
 	
 	<form action = "/2Study/Main?sign=member_insert" method="post">
 	<input type = "hidden" name = "sign" value ="member_insert"/>
-		<fieldset>
+		<fieldset id = "must">
 			<legend>필수사항</legend>
 		ID <input type = "text" name = "id" > <br>
 		PW <input type = "text" name = "pw" > <br>
 		Name <input type = "text" name = "name"> <br>
 		</fieldset>
-		<fieldset>
+		<fieldset id = "option">
 			<legend>인적사항</legend>
 		E-Mail <input type ="email" name = "email" placeholder="OOO@OOO.OOO" /> <br>
 		Gender <input type = "radio" name = "gender" value = "male" checked /> 남성
@@ -32,7 +32,7 @@
 					<option value = "China"> 중국 </option>
 				</select> <br>
 		</fieldset>			
-		<fieldset>
+		<fieldset id = "etc">
 			<legend>기타사항</legend>
 		Hobby <input type ="checkbox" name = "hobby" value = "movie" /> 영화 
 			  <input type ="checkbox" name = "hobby" value = "drive" /> 드라이브 
@@ -43,7 +43,7 @@
 		Favorite <input type = "image" height="50" src = "https://i.pinimg.com/originals/a1/60/71/a16071849d7eaf5ef3d6554710451f05.png" alt ="Cat"/>
 				 <input type = "image" height="50" src = "https://smallimg.pngkey.com/png/small/42-426056_cats-dogs-cats-and-dogs-heart-shaped-svg.png" alt ="Dog"/> <br>
 		</fieldset>
-		<fieldset>
+		<fieldset id = "add">
 			<legend>추가사항</legend>
 		<textarea rows = "3" cols ="50" name ="desc">
 자기소개를 입력해주세요.

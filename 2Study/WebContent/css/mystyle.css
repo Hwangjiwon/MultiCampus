@@ -1,0 +1,24 @@
+h1, h2, h4 {
+	color : #054D6C;
+	display: inline;
+}
+li:first-letter{
+	color : #822CC2;
+	font-size : 30px;
+	font-weight : bold;
+}
+li {
+	font-weight: bold;
+}
+
+#must {
+	background: #FBCFD0;
+}
+
+#option, #etc {
+	background: #C8EFD4;
+}
+
+#add {
+	background: #EDD3ED;
+}
